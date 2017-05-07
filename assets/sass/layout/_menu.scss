@@ -98,7 +98,7 @@
 			@include vendor('transition', 'opacity #{_duration(menu)} ease-in-out');
 			@include vendor('transition-delay', '#{_duration(menu) * 0.5}');
 			@include padding(3em, 3em);
-			width: 24em;
+			width: 28em;
 			max-width: 100%;
 			opacity: 0;
 			overflow-y: auto;
