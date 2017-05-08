@@ -9,10 +9,25 @@
 	.wrapper {
 		@include padding(7.5em, 0);
 
+		> .wallpaper {
+			background-size:cover;
+			background-position:center, center;
+			background-repeat:no-repeat;
+			position: absolute;
+			top: 0;
+			left:0;
+			right:0;
+			width: 100vw;
+			height: 100%;
+			opacity: 0.07;
+			z-index: 1;
+		}
+
 		> .inner {
 			width: 72em;
 			max-width: 100%;
 			margin: 0 auto;
+			z-index: 100;
 
 			@include breakpoint(xlarge) {
 				width: 64em;
@@ -50,6 +65,7 @@
 
 		&.featured {
 			text-align: center;
+			position: relative;
 
 			> .inner {
 				@include vendor('display', 'inline-flex');
