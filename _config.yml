@@ -16,8 +16,8 @@
 title: Stephanie Michelle
 email: stephaniemichelleconsultations@gmail.com
 description: Legal services for small business owners and families in the greater Denver, Coloarado area
-baseurl: "/stephaniemichelle" # the subpath of your site, e.g. /blog
-url: "https://uxthinker.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://thelovinglawyer.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
