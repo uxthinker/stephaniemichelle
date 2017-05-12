@@ -29,6 +29,16 @@
 			margin: 0 auto;
 			z-index: 100;
 
+			p.center {
+				margin-left: 12rem;
+				margin-right: 12rem;
+				@include breakpoint(large) {
+					margin-left: 2rem;
+					margin-right: 2rem;
+				}
+
+			}
+
 			@include breakpoint(xlarge) {
 				width: 64em;
 			}
@@ -43,10 +53,6 @@
 
 		&.style3 {
 			@include color('invert');
-			@include vendor('background-image', (
-				'linear-gradient(to top, #{transparentize(_palette(invert, bg), 0.3)}, #{transparentize(_palette(invert, bg), 0.3)})',
-				'url("../../images/pic05.jpg")'
-			));
 			background-size:		cover, cover;
 			background-position:	center, center;
 			background-repeat:		repeat, no-repeat;
@@ -60,6 +66,37 @@
 						}
 					}
 				}
+			}
+		}
+
+		&.style4 {
+			@include color('invert');
+			position: relative;
+			padding: 8em 0;
+			height: 60vh;
+
+			@include breakpoint(large) {
+				height: 30vh;
+				padding:0;
+			}
+
+			.inner {
+				position: absolute;
+				right: 0;
+				left: 0;
+			}
+
+			.wallpaper {
+				position: absolute;
+				top: 0;
+				left:0;
+				right:0;
+				width: 100vw;
+				height: 100%;
+				opacity: 0.2;
+				background-size:	cover;
+				background-position: center;
+				background-repeat: no-repeat;
 			}
 		}
 
