@@ -22,6 +22,11 @@ a.brand {
 	text-align: left;
 	margin-left: .5em;
 	font-family: 'Amatic SC', cursive;
+
+	@include breakpoint(small) {
+		font-size: 2rem;
+		margin-top: 8px;
+	}
 }
 
 /* Header */
