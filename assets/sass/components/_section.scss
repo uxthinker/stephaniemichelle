@@ -50,6 +50,12 @@
 			}
 		}
 
+		&.services {
+			span.image  img{
+				width: 100%;
+			}
+		}
+
 		@include breakpoint(small) {
 			header {
 				p {
