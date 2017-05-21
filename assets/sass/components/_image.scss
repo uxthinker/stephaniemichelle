@@ -38,6 +38,10 @@
 			top: 0.25em;
 		}
 
+		&.center {
+			text-align: center;
+		}
+
 		&.fit {
 			display: block;
 			margin: 0 0 _size(element-margin) 0;
