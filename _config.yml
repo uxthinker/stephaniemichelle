@@ -32,5 +32,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-  
-PAGES_REPO_NWO: uxthinker/stephaniemichelle
